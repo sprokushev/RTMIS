@@ -57,4 +57,13 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Balance.sql" />
+    <Build Include="Statistica.sql" />
+    <None Include="loadBalance.sql" />
+    <None Include="loadStatistica.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="RTMIS.refactorlog" />
+  </ItemGroup>
 </Project>

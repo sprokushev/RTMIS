@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="0e8c7434-cf49-4109-a8d0-84fe96d1a40d" ChangeDateTime="01/25/2020 05:09:54">
+    <Property Name="ElementName" Value="[dbo].[Balance].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Balance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e736f97-6026-4182-8a7f-e2e7e7bd1236" ChangeDateTime="01/25/2020 05:17:40">
+    <Property Name="ElementName" Value="[dbo].[AK_Balance_Column]" />
+    <Property Name="ElementType" Value="SqlUniqueConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Balance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_Balance]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f8650485-df43-4d2b-ad51-3649bf8bc07b" ChangeDateTime="01/25/2020 05:21:50">
+    <Property Name="ElementName" Value="[dbo].[Statistica].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Statistica]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ba8a6ae3-a01b-4d1b-bef8-da29f6e5ad65" ChangeDateTime="01/25/2020 05:28:56">
+    <Property Name="ElementName" Value="[dbo].[AK_Statistica_Column]" />
+    <Property Name="ElementType" Value="SqlUniqueConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Statistica]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UK_Statistica]" />
+  </Operation>
+</Operations>
