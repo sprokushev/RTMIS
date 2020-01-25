@@ -7,3 +7,31 @@
     CONSTRAINT [FK_closure_father_id] FOREIGN KEY ([father_id]) REFERENCES [person]([id]),
     CONSTRAINT [FK_closure_child_id] FOREIGN KEY ([child_id]) REFERENCES [person]([id])
 )
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'глубина относительно родителя (father_id)',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'closure_person',
+    @level2type = N'COLUMN',
+    @level2name = N'depth'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'ссылка на родителя (dbo.person)',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'closure_person',
+    @level2type = N'COLUMN',
+    @level2name = N'father_id'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'ссылка на потомка (dbo.person)',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'closure_person',
+    @level2type = N'COLUMN',
+    @level2name = N'child_id'

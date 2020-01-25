@@ -72,6 +72,7 @@
     <Build Include="closure_person.sql" />
     <Build Include="GetAllFathers.sql" />
     <Build Include="DelPerson.sql" />
+    <Build Include="Address.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="RTMIS.refactorlog" />
