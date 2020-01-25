@@ -13,7 +13,7 @@
     </RootPath>
     <RootNamespace>RTMIS</RootNamespace>
     <AssemblyName>RTMIS</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -22,6 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -62,6 +63,15 @@
     <Build Include="Statistica.sql" />
     <None Include="loadBalance.sql" />
     <None Include="loadStatistica.sql" />
+    <Build Include="person.sql" />
+    <Build Include="AddPerson.sql" />
+    <Build Include="GetFather.sql" />
+    <None Include="loadPerson.sql" />
+    <Build Include="GetChilds.sql" />
+    <Build Include="GetAllChilds.sql" />
+    <Build Include="closure_person.sql" />
+    <Build Include="GetAllFathers.sql" />
+    <Build Include="DelPerson.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="RTMIS.refactorlog" />
