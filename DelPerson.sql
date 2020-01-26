@@ -9,7 +9,7 @@ BEGIN
 		/* есть потомки! */
 		RAISERROR ('Есть потомки!', 16, 1);
 		RETURN 
-    END;
+    	END;
 
 	/* удаляем ссылкы на предков */
 	DELETE FROM closure_person WHERE child_id=@id;

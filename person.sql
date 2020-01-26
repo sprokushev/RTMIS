@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[person]
 (
-	[id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [lastname] NVARCHAR(50) NOT NULL, 
     [firstname] NVARCHAR(50) NULL, 
     [patronymic] NVARCHAR(50) NULL, 

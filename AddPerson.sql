@@ -14,7 +14,7 @@ BEGIN
 	BEGIN
 		/* если ссылка не верная, обнулим ее */
 		SET @father_id=0;
-    END;
+    	END;
 
 	/* добавляем человека */
 	INSERT INTO dbo.person (lastname, firstname, patronymic, birthday, gender, father_id)

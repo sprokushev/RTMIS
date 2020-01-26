@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Address]
 (
-	[id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [person_id] INT NOT NULL, 
     [country] NVARCHAR(50) NULL, 
     [city] NVARCHAR(50) NULL, 
